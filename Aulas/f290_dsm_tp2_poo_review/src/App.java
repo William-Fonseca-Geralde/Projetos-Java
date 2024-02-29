@@ -1,5 +1,8 @@
+import domain.Pessoa;
+
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello, World!");
+        Pessoa Roberto = new Pessoa("Roberto", 19, 185);
+        System.out.println(Roberto);
     }
 }
