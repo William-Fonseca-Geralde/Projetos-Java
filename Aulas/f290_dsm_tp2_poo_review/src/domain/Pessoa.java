@@ -47,15 +47,13 @@ public abstract class Pessoa {
 
     
     public void Amanhecer() {
-        System.out.println("Bom Dia");
+        System.out.printf("Bom Dia %s %s\n", this.getClass().getSimpleName(), getNome());
     }
 
-    public void Entardecer() {
-        System.out.println("Boa Tarde");
-    }
+    public abstract void Trabalhar(); // Um método abstrato não pode ser instanciado por outras classes, é usado quando um método é facultativo, ou seja, tem classe que vai usar, outras não
 
     @Override
     public String toString() {
-        return "Pessoa [nome=" + nome + ", idade=" + idade + ", altura=" + altura + "]";
+        return this.getClass().getSimpleName() + " Pessoa [nome=" + nome + ", idade=" + idade + ", altura=" + altura + "]";
     }  
 }
