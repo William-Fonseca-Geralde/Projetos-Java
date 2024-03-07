@@ -1,6 +1,8 @@
 package domain;
 
-public class Estudante extends Pessoa{
+import domain.interfaces.EstudIdeia;
+
+public class Estudante extends Pessoa implements EstudIdeia{
 
     public Estudante(String nome, int idade, int altura) {
         super(nome, idade, altura);
@@ -8,7 +10,11 @@ public class Estudante extends Pessoa{
 
     @Override
     public void Trabalhar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Trabalhar'");
+        Ler();
+    }
+
+    @Override
+    public void Ler() {
+        System.out.println("Bora Estudar " + getNome());
     }
 }

@@ -1,13 +1,19 @@
 package domain;
 
-public class Funcionaro extends Pessoa {
+import domain.interfaces.FuncIdeia;
+
+public class Funcionaro extends Pessoa implements FuncIdeia {
     public Funcionaro(String nome, int idade, int altura) {
         super(nome, idade, altura);
     }
 
     @Override
     public void Trabalhar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'Trabalhar'");
+        Laborar();
+    }
+
+    @Override
+    public void Laborar() {
+        System.out.println("Bora Trabalhar " + getNome());
     }
 }
