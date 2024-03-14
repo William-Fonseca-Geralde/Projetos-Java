@@ -3,9 +3,6 @@ package model;
 public class Jokenpo {
     private Algoritmo algoritmo;
 
-    public Algoritmo getAlgoritmo() {
-        return algoritmo;
-    }
     public void setAlgoritmo(Algoritmo algoritmo) {
         this.algoritmo = algoritmo;
     }
@@ -13,6 +10,4 @@ public class Jokenpo {
     public void jogar(Tipo tipo) {
         this.algoritmo.executar(tipo);
     }
-
-    
 }
