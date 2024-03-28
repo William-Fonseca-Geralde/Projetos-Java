@@ -1,5 +1,7 @@
 package model;
 
+import model.interfaces.Algoritmo;
+
 public class Jokenpo {
     private Algoritmo algoritmo;
 
